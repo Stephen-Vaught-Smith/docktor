@@ -1,0 +1,13 @@
+#use port 443
+ORport 433
+
+# middle node only
+ExitPolicy *:*
+
+
+# limit bandwidth
+RelayBandwidthRate 1 MBits
+RelayBandwidthBurst 4 MBits
+AccountingMax 50Gbytes
+AccountingStart month 2 12:00
+
